@@ -9,7 +9,7 @@ After the file is fully uploaded-> Throwing an confirmation that the file (of si
 After the file is Not uploaded->Throwing an error that the file of size More than 2MB has to be uploaded.
 
 ## To Test and Validate the file extension/format: supported
-upload a file of any extension apart from txt, csv, xlsx and no extension->Throwing an error as file format not supported.
+Upload a file of any extension apart from txt, csv, xlsx and no extension->Throwing an error as file format not supported.
 
 
 
