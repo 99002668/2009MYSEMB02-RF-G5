@@ -3,7 +3,7 @@
 File(CV) Upload Check on "naukri.com"
 
 To Test and Validate the file size check (Less than maximum Size):
-After the file is fully uploaded-> it is throwing an confirmation that the file of size less than 2MB succefully uploaded.
+After the file is fully uploaded-> Throwing an confirmation that the file of size less than 2MB successfully uploaded.
 
 To Test and Validate the file size check	(More than maximum Size):
 After the file is Not uploaded->Throwing an error that the file of size More than 2MB has to be uploaded.
