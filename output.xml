@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20201104 15:26:39.395" rpa="false">
+<suite id="s1" name="SeleniumMiniProject2" source="D:\Selenium\RobotWorkplace\SeleniumMiniProject2">
+<suite id="s1-s1" name="UploadOption" source="D:\Selenium\RobotWorkplace\SeleniumMiniProject2\UploadOption.robot">
+<test id="s1-s1-t1" name="balaji">
+<kw name="Start Test" library="CommonFunctionality" type="setup">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>${DRIVER LOCATER}</arg>
+</arguments>
+<msg timestamp="20201104 15:26:40.078" level="INFO">Environment variable 'Path' set to value 'C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Selenium\Driver;C:\Users\Training\AppData\Local\Android\Sdk\emulator;C:\Users\Training\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Training\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Training\AppData\Local\Programs\Python\Python39\;C:\Users\Training\AppData\Local\Microsoft\WindowsApps;C:\Users\Training\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Training\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;;C:\Users\Training\AppData\Roaming\npm;C:\Users\Training\Desktop;;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver'.</msg>
+<status status="PASS" starttime="20201104 15:26:40.078" endtime="20201104 15:26:40.079"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL LOCATER}</arg>
+<arg>browser=${BROWSER NAME}</arg>
+</arguments>
+<msg timestamp="20201104 15:26:40.079" level="INFO">Opening browser 'chrome' to base url 'https://www.naukri.com/'.</msg>
+<status status="PASS" starttime="20201104 15:26:40.079" endtime="20201104 15:26:54.894"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201104 15:26:54.895" endtime="20201104 15:26:56.147"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20201104 15:26:56.147" endtime="20201104 15:26:56.149"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:26:40.078" endtime="20201104 15:26:56.149"></status>
+</kw>
+<kw name="TC1_UploadedSuccessfully">
+<arguments>
+<arg>D:\\Selenium\\RobotWorkplace\\SeleniumMiniProject2\\TestData\\jpegnotsupported.png</arg>
+<arg>Sorry! The file format is not supported</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:27:01.152" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:26:56.150" endtime="20201104 15:27:01.152"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>id=file_upload</arg>
+<arg>${filelocation}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:01.153" level="INFO">Sending D:\Selenium\RobotWorkplace\SeleniumMiniProject2\TestData\jpegnotsupported.png to browser.</msg>
+<status status="PASS" starttime="20201104 15:27:01.153" endtime="20201104 15:27:01.752"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:27:06.754" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:27:01.752" endtime="20201104 15:27:06.754"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${expectedvalue}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:06.770" level="INFO">Current page contains text 'Sorry! The file format is not supported'.</msg>
+<status status="PASS" starttime="20201104 15:27:06.754" endtime="20201104 15:27:06.770"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:26:56.149" endtime="20201104 15:27:06.770"></status>
+</kw>
+<kw name="End Test" library="CommonFunctionality" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201104 15:27:06.771" endtime="20201104 15:27:09.480"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:06.770" endtime="20201104 15:27:09.481"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:26:40.077" endtime="20201104 15:27:09.482" critical="yes"></status>
+</test>
+<test id="s1-s1-t2" name="balaji">
+<kw name="Start Test" library="CommonFunctionality" type="setup">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>${DRIVER LOCATER}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:09.489" level="INFO">Environment variable 'Path' set to value 'C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Selenium\Driver;C:\Users\Training\AppData\Local\Android\Sdk\emulator;C:\Users\Training\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Training\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Training\AppData\Local\Programs\Python\Python39\;C:\Users\Training\AppData\Local\Microsoft\WindowsApps;C:\Users\Training\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Training\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;;C:\Users\Training\AppData\Roaming\npm;C:\Users\Training\Desktop;;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver'.</msg>
+<status status="PASS" starttime="20201104 15:27:09.488" endtime="20201104 15:27:09.489"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL LOCATER}</arg>
+<arg>browser=${BROWSER NAME}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:09.492" level="INFO">Opening browser 'chrome' to base url 'https://www.naukri.com/'.</msg>
+<status status="PASS" starttime="20201104 15:27:09.490" endtime="20201104 15:27:22.026"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201104 15:27:22.026" endtime="20201104 15:27:23.148"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20201104 15:27:23.149" endtime="20201104 15:27:23.150"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:09.486" endtime="20201104 15:27:23.152"></status>
+</kw>
+<kw name="TC1_UploadedSuccessfully">
+<arguments>
+<arg>D:\\Selenium\\RobotWorkplace\\SeleniumMiniProject2\\TestData\\testinglessthan2mb.pdf</arg>
+<arg>uploaded Successfully</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:27:28.155" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:27:23.155" endtime="20201104 15:27:28.155"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>id=file_upload</arg>
+<arg>${filelocation}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:28.157" level="INFO">Sending D:\Selenium\RobotWorkplace\SeleniumMiniProject2\TestData\testinglessthan2mb.pdf to browser.</msg>
+<status status="PASS" starttime="20201104 15:27:28.155" endtime="20201104 15:27:28.211"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:27:33.213" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:27:28.211" endtime="20201104 15:27:33.213"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${expectedvalue}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:34.411" level="INFO">Current page contains text 'uploaded Successfully'.</msg>
+<status status="PASS" starttime="20201104 15:27:33.213" endtime="20201104 15:27:34.411"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:23.153" endtime="20201104 15:27:34.411"></status>
+</kw>
+<kw name="End Test" library="CommonFunctionality" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201104 15:27:34.412" endtime="20201104 15:27:37.110"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:34.412" endtime="20201104 15:27:37.111"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:09.484" endtime="20201104 15:27:37.112" critical="yes"></status>
+</test>
+<test id="s1-s1-t3" name="balaji">
+<kw name="Start Test" library="CommonFunctionality" type="setup">
+<kw name="Append To Environment Variable" library="OperatingSystem">
+<doc>Appends given ``values`` to environment variable ``name``.</doc>
+<arguments>
+<arg>Path</arg>
+<arg>${DRIVER LOCATER}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:37.115" level="INFO">Environment variable 'Path' set to value 'C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/Training/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Selenium\Driver;C:\Users\Training\AppData\Local\Android\Sdk\emulator;C:\Users\Training\AppData\Local\Android\Sdk\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Training\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Training\AppData\Local\Programs\Python\Python39\;C:\Users\Training\AppData\Local\Microsoft\WindowsApps;C:\Users\Training\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Training\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.2.3\bin;;C:\Users\Training\AppData\Roaming\npm;C:\Users\Training\Desktop;;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver;D:\Selenium\RobotWorkplace\SeleniumMiniProject2\driver'.</msg>
+<status status="PASS" starttime="20201104 15:27:37.115" endtime="20201104 15:27:37.115"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>url=${URL LOCATER}</arg>
+<arg>browser=${BROWSER NAME}</arg>
+</arguments>
+<msg timestamp="20201104 15:27:37.116" level="INFO">Opening browser 'chrome' to base url 'https://www.naukri.com/'.</msg>
+<status status="PASS" starttime="20201104 15:27:37.116" endtime="20201104 15:27:54.542"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201104 15:27:54.543" endtime="20201104 15:27:55.675"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<status status="PASS" starttime="20201104 15:27:55.675" endtime="20201104 15:27:55.676"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:37.114" endtime="20201104 15:27:55.677"></status>
+</kw>
+<kw name="TC1_UploadedSuccessfully">
+<arguments>
+<arg>D:\\Selenium\\RobotWorkplace\\SeleniumMiniProject2\\TestData\\testingmorethan2mb.pdf</arg>
+<arg>Sorry! The file size cannot be more than 2 MB</arg>
+</arguments>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:28:00.678" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:27:55.677" endtime="20201104 15:28:00.678"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>id=file_upload</arg>
+<arg>${filelocation}</arg>
+</arguments>
+<msg timestamp="20201104 15:28:00.680" level="INFO">Sending D:\Selenium\RobotWorkplace\SeleniumMiniProject2\TestData\testingmorethan2mb.pdf to browser.</msg>
+<status status="PASS" starttime="20201104 15:28:00.679" endtime="20201104 15:28:00.738"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201104 15:28:05.741" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20201104 15:28:00.738" endtime="20201104 15:28:05.741"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>${expectedvalue}</arg>
+</arguments>
+<msg timestamp="20201104 15:28:05.759" level="INFO">Current page contains text 'Sorry! The file size cannot be more than 2 MB'.</msg>
+<status status="PASS" starttime="20201104 15:28:05.741" endtime="20201104 15:28:05.760"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:55.677" endtime="20201104 15:28:05.760"></status>
+</kw>
+<kw name="End Test" library="CommonFunctionality" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20201104 15:28:05.760" endtime="20201104 15:28:08.114"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:28:05.760" endtime="20201104 15:28:08.115"></status>
+</kw>
+<status status="PASS" starttime="20201104 15:27:37.114" endtime="20201104 15:28:08.115" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201104 15:26:39.485" endtime="20201104 15:28:08.117"></status>
+</suite>
+<status status="PASS" starttime="20201104 15:26:39.452" endtime="20201104 15:28:08.120"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="SeleniumMiniProject2">SeleniumMiniProject2</stat>
+<stat pass="3" fail="0" id="s1-s1" name="UploadOption">SeleniumMiniProject2.UploadOption</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20201104 15:27:09.484" level="WARN">Multiple test cases with name 'balaji' executed in test suite 'SeleniumMiniProject2.UploadOption'.</msg>
+<msg timestamp="20201104 15:27:37.113" level="WARN">Multiple test cases with name 'balaji' executed in test suite 'SeleniumMiniProject2.UploadOption'.</msg>
+</errors>
+</robot>
