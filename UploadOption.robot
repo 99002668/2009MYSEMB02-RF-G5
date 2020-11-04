@@ -8,7 +8,7 @@ Library    SeleniumLibrary
 Resource     Resource/CommonFunctionality.resource
 Test Setup    Start Test
 Test Teardown    End Test
-Library    DataDriver    file=D:\\Selenium\\RobotWorkplace\\MiniProject2\\TestData\\testdata.xlsx    sheet_name=UploadTest    
+Library    DataDriver    file=${EXECDIR}${/}testdata${/}testdata.xlsx    sheet_name=UploadTest    
 
 Test Template    TC1_UploadedSuccessfully    
 

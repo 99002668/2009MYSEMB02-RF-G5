@@ -7,7 +7,7 @@ Library    OperatingSystem
 Library    SeleniumLibrary   
 
 *** Variables ***
-${DRIVER LOCATER}    D:\\Selenium\\Driver 
+${DRIVER LOCATER}    ${EXECDIR}${/}driver 
 ${URL LOCATER}    https://www.naukri.com/
 ${BROWSER NAME}    chrome
 
