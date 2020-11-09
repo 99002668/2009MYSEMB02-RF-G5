@@ -1,5 +1,7 @@
 # Selenium Mini Project on Naukri.com
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ed2e74ba50fa4d73bc11bce16252e68f)](https://app.codacy.com/gh/99002668/2009MYSEMB02-RF-G5?utm_source=github.com&utm_medium=referral&utm_content=99002668/2009MYSEMB02-RF-G5&utm_campaign=Badge_Grade_Settings)
+
 File(CV) Upload Check on "naukri.com"
 
 ## To Test and Validate the file size check (Less than maximum Size):
